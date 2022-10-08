@@ -157,6 +157,7 @@ h3 {
     width: 100%;
     height: 2px;
     background-color: rgb(76 64 55);
+    transition: transform .5s ease-out;
 }
 
 .burger-line-bottom {
@@ -164,6 +165,7 @@ h3 {
     height: 2px;
     margin-top: .7rem;
     background-color: rgb(76 64 55);
+    transition: transform .5s ease-out;
 }
 
 .burger-line-top.white-line {
@@ -177,13 +179,21 @@ h3 {
     transform: rotate(-45deg) translate(-2px, -16px);
 }
 
-
-
 .nav-links {
     position: fixed;
     inset: 0;
     background-color: rgb(76 64 55);
     display: none;
+    animation: back .5s linear;
+}
+
+@keyframes back {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
 }
 
 .nav-links.open {
@@ -204,27 +214,60 @@ h3 {
 
 }
 
+.nav-links-grid a li:hover {
+    opacity: .6;
+}
+
 .nav-links-num {
     position: absolute;
     top: 11rem;
-    font-size: .675rem;
+    font-size: 0rem;
+    animation: small-font .5s linear forwards .5s;
 }
 
 .nav-links-num-2 {
     position: absolute;
     top: 18.5rem;
-    font-size: .675rem;
+    font-size: 0rem;
+    animation: small-font .5s linear forwards .5s;
 }
 
 .nav-links-num-3 {
     position: absolute;
     top: 27rem;
-    font-size: .675rem;
+    font-size: 0rem;
+    animation: small-font .5s linear forwards .5s;
 }
 
 
 .nav-links-grid a li {
     padding-top: 2rem;
+    transition-duration: .5s;
+}
+
+
+.nav-links.open a li {
+    display: block;
+    font-size: 0;
+    animation: font .5s linear forwards .5s;
+}
+
+@keyframes font {
+    0% {
+        font-size: 0;
+    }
+    100% {
+        font-size: 6rem;
+    }
+}
+
+@keyframes small-font {
+    0% {
+        font-size: 0;
+    }
+    100% {
+        font-size: .8rem;
+    }
 }
 
 /* home section 1 */
@@ -453,6 +496,7 @@ main {
 
     background-color: rgb(76 64 55);
     border: none;
+    cursor: pointer;
 }
 
 /* home section5 */
@@ -648,8 +692,13 @@ main {
     padding-bottom: 10rem;
 }
 
+.blog-grid div {
+    overflow: hidden;
+}
+
 .blog-grid div img {
     width: 100%;
+    transition-duration: .5s;
 }
 
 .blog-grid div h3 {
@@ -1304,7 +1353,7 @@ footer {
     font-size: 1.5rem;
 }
 
-.next-project {
+.next-project, .next-project {
     text-align: center;
 }
 
@@ -1312,7 +1361,7 @@ footer {
     position: relative;
 }
 
-.project-bottom-img {
+.project-bottom-img, .product-bottom-img {
     justify-content: center;
     opacity: .6;
     width: 100%;
@@ -1323,7 +1372,8 @@ footer {
     width: 35%;
 }
 
-.next-project-name {
+
+.next-project-name, .next-product-name {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1390,17 +1440,20 @@ footer {
     width: 64%;
 }
 
-.blog-post-btn-1 {
+.blog-post-btn-1, .shop-btn {
     background-color: rgb(76 64 55);
     color: rgb(255 255 255);
     transition-duration: .5s;
 }
 
 .blog-post-button, .blog-post-btn-1 {
+    width: 10rem;
+}
+
+.blog-post-button, .blog-post-btn-1, .shop-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10rem;
     height: 3rem;
     margin: 1rem 0;
     border: 1px solid rgb(149 127 114);
@@ -1434,8 +1487,17 @@ footer {
     margin-bottom: 10rem;
 }
 
+.blog-post-2 {
+    overflow: hidden;
+}
+
 .blog-post-2 img {
     width: 18vw;
+    transition-duration: .5s;
+}
+
+.blog-post-2:hover img {
+    transform: scale(1.05);
 }
 
 .horizontal-flex-2 {
@@ -1457,7 +1519,7 @@ footer {
     transition-duration: .5s;
 }
 
-.blog-post-2 h3:hover {
+.blog-post-2:hover h3 {
     opacity: .6;
 }
 
@@ -1483,10 +1545,16 @@ footer {
 .blog-post-3 {
     margin: 6rem 0;
     width: 34%;
+    overflow: hidden;
+}
+
+.blog-post-3:hover img {
+    transform: scale(1.02);
 }
 
 .blog-post-3 img {
     width: 30vw;
+    transition-duration: .5s;
 }
 
 .blog-post-3 h3, .blog-post-3 p {
@@ -1494,7 +1562,7 @@ footer {
     transition-duration: .5s;
 }
 
-.blog-post-3 h3:hover  {
+.blog-post-3:hover h3  {
     opacity: .6;
     cursor: pointer;
 }
@@ -1586,4 +1654,196 @@ footer {
     font-size: .9rem;
     max-width: 32rem;
 }
+
+
+/* shop page */
+
+.shop-title {
+    gap: 11rem;
+    align-items: end;
+    padding: 3rem 0 6rem;
+}
+
+.shop-title h1 {
+    font-size: 7rem;
+}
+
+.shop-text {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    max-width: 28rem;
+}
+
+.categories-title {
+    text-align: end;
+    font-size: .8rem;
+}
+
+.shop-btn {
+    width: 8rem;
+}
+
+/* product section */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 5rem; 
+    padding-bottom: 6rem;
+}
+
+.product-div {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.product-div:hover img, .blog-grid div:hover img {
+    transform: scale(1.05);
+}
+
+.product-div:hover h3, .product-div:hover h2, .blog-grid div:hover h3 {
+    opacity: .6;
+}
+
+.product-div img {
+    width: 100%;
+    transition-duration: .5s;
+    overflow: hidden;
+}
+
+.price {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 8px 12px;
+    color: rgb(249 241 236);
+    background-color: rgb(149 127 114);
+}
+
+
+/* vase category page */
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+    padding-bottom: 6rem;
+}
+
+.product-div h2 {
+    font-size: 2.5rem;
+}
+
+.product-bottom-img:hover img {
+    transform: scale(1.05);
+}   
+
+.product-bottom-img img {
+    width: 20%;
+    margin: 2rem 0;
+    transition-duration: .5s;
+}
+
+.next-product-name {
+    top: 70%;
+}
+
+.next-product-name h2 {
+    font-size: 7rem;
+}
+
+.next-product {
+    text-align: center;
+}
+
+/* particular product */
+
+.product-description h1 {
+    line-height: 1;
+}
+
+.product-flex {
+    align-items: center;
+    gap: 6rem;
+}
+
+.product-img-div {
+    width: 100%;
+}
+
+.product-img-div img {
+    width: 100%;
+}
+
+.product-description p, .product-description span  {
+    font-size: 1.125rem;
+    margin: 1rem 0;
+}
+
+.product-name {
+    font-size: 6.5rem;
+}
+
+.product-text {
+   font-size: 1.125rem; 
+}
+
+.line-through {
+    padding-right: 2rem;
+    text-decoration:line-through;
+}
+
+.add-to-cart {
+    gap: 3rem;
+}
+
+.add-to-cart label {
+    padding: 2rem 0 1rem;
+}
+
+.quantity, .color {
+    flex-direction: column;
+}
+
+.quantity input, .color select {
+    border: 1px solid rgb(221 221 221);
+    outline: none;
+}
+
+.quantity input {
+    width: 6rem;
+    padding: 1.3rem 1.5rem;
+}
+
+.color select {
+    width: 21rem;
+    padding: 1.3rem 1.5rem;
+    
+}
+
+.color select option {
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: rgb(51 51 51);
+    font-family:'Manrope-Regular';
+}
+
+.submit-cart {
+    width: 30rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background-color: rgb(76 64 55);
+    font-family: Manrope,sans-serif;
+    color: rgb(255 255 255);
+    font-size: 10px;
+    border: none;
+    letter-spacing: 4px; 
+    cursor: pointer;
+}
+
+
+
 

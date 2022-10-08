@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="static/css/font.css">
     <link rel="stylesheet" href="static/css/style.css">
     <link href="https://uploads-ssl.webflow.com/62da9129694c950b9ffca6a0/62f284636cb9eb24ff04c5bd_favicon-inner-template.svg" rel="shortcut icon" type="image/x-icon">
-    <title>Inner - E-commerce Website</title>
+    <title>Luxury Lamp - Inner - E-commerce Website</title>
 </head>
 <body>
     <header class="header">
@@ -51,29 +51,38 @@
         </nav>
     </header>
     <main>
-        <section class="posts-section container">
-            <div class="horizontal-flex padding-top flex">
-                <div>News</div>
-                <div></div>
-                <div>July 22, 2022</div>
+        <section class="particular-product-section container">
+            <div class="product-flex flex">
+                <div class="product-img-div">
+                    <img src="static/img/lamp-product-01.jpg" alt="lamp">
+                </div>
+                <div class="product-description">
+                    <h1 class="product-name">
+                        Luxury Lamp</h1>
+                    <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit dictum in hendrerit nisi, augue viverra elit oa vertis.</p>
+                    <span class="line-through">$ 99.00 USD</span> <span class="bold">$ 69.00 USD</span>
+                    <form action="">
+                        <div class="add-to-cart flex">
+                            <div class="quantity flex"> 
+                                <label class="bold" for="">Quantity</label>
+                                <input type="number" value="1">
+                            </div>
+                            <div class="color flex"> 
+                                <label class="bold" for="">Color</label>
+                                <select name="color" id="color">
+                                    <option placeholder="Select Color">Select Color</option>
+                                    <option value="Golden">Black</option>
+                                    <option value="White">White</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <input class="submit-cart" type="submit" name="" id="" value="ADD TO CART">
+                    </form>
+                </div>
             </div>
-            <h1 class="title-resources">10 of the best dining chairs</h1>
-            <img class="blog-img" src="static/img/_blog-post-03.jpg" alt="blog-img">
-        </section>
-        <section class="post-section-2 blog-container">
-            <div class="what-we-did">
-                <h2>10 of the best edit focuses on dining chairs.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing praesent velit viverra sit semper lorem eu cursus vel hendrerit elementum morbi curabitur etiam nibh justo, lorem aliquet donec sed similem lorem ipsum dolor.</p>
-                <ol class="list-2">
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li>Diam sit amet nisl suscipit adipiscing habitant morbi.</li>
-                    <li>Lectus urna duis convallis convallis tellus id interdum velit.</li>
-                    <li>Elit scelerisque mauris pellentesque dolor sit dolor</li>
-                </ol>
-                <h3>Stylish chairs can completely transform</h3>
-                <p>Consectetur libero id faucibus nisl donec pretium vulputate sapien nec sagittis aliquam nunc lobortis mattis aliquam faucibus purus in. Vitae congue eu consequat ac felis placerat mauris ultrices cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere praesent tristique magna sit amet purus gravida quis blandit turpis.</p>
-                <img src="static/img/blog-post.jpg" alt="blog-post">
-                <h3>Here are some key considerations to keep in mind:</h3>
+            <div class="divider"></div>
+            <div class="padding-bottom what-we-did">
+                <h3>About the product</h3>
                 <p>At risus viverra adipiscing at in tellus integer feugiat nisl pretium fusce id velit ut tortor sagittis orci a scelerisque purus semper eget at lectus urna duis convallis. porta nibh venenatis cras sed felis eget neque laoreet suspendisse interdum consectetur libero id faucibus nisl donec pretium vulputate sapien nec sagittis aliquam nunc lobortis mattis aliquam faucibus purus in.</p>
                 <ul class="list">
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -81,66 +90,15 @@
                     <li>Lectus urna duis convallis convallis tellus id interdum velit.</li>
                     <li>Elit scelerisque mauris pellentesque dolor sit dolor</li>
                 </ul>
-                <h3>Consider the potential for stains and spillages</h3>
-                <p>Velit euismod in pellentesque massa placerat volutpat lacus laoreet non curabitur gravida odio aenean sed adipiscing diam donec adipiscing tristique risus. amet est placerat in egestas erat imperdiet sed euismod nisi. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum felis donec et odio pellentesque diam volutpat commodo.</p>
-                <p class="left-border">“Lorem ipsum dolor sit amet, consectetur elit lobortis arcu enim urna adipiscing praesent velit viverra sit semper lorem eu cursus vel hendrerit elementum.”</p>
-                <h3>Practical, wipeable designs that are easy to clean</h3>
-                <p>Vitae congue eu consequat ac felis placerat mauris ultrices cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere praesent tristique magna sit amet purus gravida quis blandit turpis diam donec adipiscing ut lectus arcu bibendum at varius vel pharetra nibh venenatis cras sed felis eget.</p>
                 <div class="divider"></div>
-            </div>
-            <div class="post-flex flex">
-                <div class="designer-div">
-                    <a href="John.html" class="designer-flex flex">
-                        <img class="designer-img" src="static/img/team-member-avatar-02.jpg" alt="girl">
-                        <div>
-                            <div class="designer-name">John Smith</div>
-                            <div class="job">CEO & Designer</div>
-                        </div>
-                    </a>
-                    <div class="icons-2 flex">
-                        <a href="https://www.facebook.com/"><img src="static/img/icons/fb.svg" alt="fb-icon"></a>
-                        <a href="https://twitter.com/"><img src="static/img/icons/twitter.svg" alt="twitter-icon"></a>
-                        <a href="https://www.instagram.com/"><img src="static/img/icons/insta.svg" alt="insta-icon"></a>
-                    </div>
-                </div>
-                <div>
-                    <p class="small-font">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
-                </div>
-            </div>
-            <div class="divider"></div>
-        </section>
-        <section class="home-section9 container">
-            <div class="subtitle">OUR ARTICLES</div>
-            <div class="articles flex">
-                <h2>Take a look at our latest articles & resources</h2>
-                <a class="btn" href="blog.html">
-                    <button class="learn-more-btn">all posts</button>
-                    <!-- <div class="overlay"></div> -->
-                </a>
-            </div>
-        </section>
-        <section class="home-section10 container">
-            <div class="blog-grid">
-                <div>
-                    <img src="static/img/blog-img-1.png" alt="coach">
-                    <a href="furniture.html"><h3>Contemporary urban furniture</h3></a>
-                    <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna praesent.</p>
-                </div>
-                <div>
-                    <img src="static/img/blog-img-2.png" alt="coach">
-                    <a href="kitchen-trend.html"><h3>New Top kitchen trends 2022</h3></a>
-                    <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna praesent.</p>
-                </div>
-                <div>
-                    <img src="static/img/blog-img-3.png" alt="coach">
-                    <a href="contemporary-kitchen.html"><h3>Our contemporary kitchen</h3></a>
-                    <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna praesent.</p>
-                </div>
-                <div>
-                    <img src="static/img/blog-img-4.png" alt="coach">
-                    <a href="dinning-chair.html"><h3>10 of the best dinning chairs</h3></a>
-                    <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna praesent.</p>
-                </div>
+                <h3>Additional info</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing praesent velit viverra sit semper lorem eu cursus vel hendrerit elementum morbi curabitur etiam nibh justo, lorem aliquet donec sed similem lorem ipsum dolor.</p>
+                <ol class="list-2">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Diam sit amet nisl suscipit adipiscing habitant morbi.</li>
+                    <li>Lectus urna duis convallis convallis tellus id interdum velit.</li>
+                </ol>
+                
             </div>
         </section>
     </main>
