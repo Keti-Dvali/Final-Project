@@ -14,9 +14,13 @@ body, button {
 }
 
 h1, h2, h3 {
+    padding-bottom: 2rem;
     font-family:'PlayfairDisplay-Regular';
     font-size: 4rem;
     color: rgb(76 64 55);
+    line-height: 1;
+    /* transform: skew(90deg); */
+    transition: transform .5s ease-in-out .1s;
 }
 
 h3 {
@@ -282,9 +286,9 @@ main {
     z-index: 1;
 }
 
-.home-section1 {
+.home-section1-flex {
     justify-content: space-between;
-    padding: 3rem 0 6rem 0;
+    padding-top: 3rem;
 }
 
 .subtitle {
@@ -299,17 +303,10 @@ main {
 }
 
 .title {
+    max-width: 17rem;
     margin-top: 6rem;
     color: rgb(76 64 55);
     font-size: 6.5vw;
-}
-
-.line-interior {
-    width: 5vw;
-    height: 3px;
-    align-self: center;
-    margin-top: 20px;
-    background-color: rgb(76 64 55);
 }
 
 .interior {
@@ -317,7 +314,6 @@ main {
 }
 
 .two-horizontal-btn {
-    margin-top: 8rem;
     gap: 3rem;
 }
 
@@ -505,9 +501,8 @@ main {
     padding: 8rem 0;
 }
 
-.project-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.project-flex, .project-flex-2 {
+    display: flex;
     align-items: center;
 }
 
@@ -813,6 +808,7 @@ footer {
 
 .contact-title h1 {
     font-size: 7rem;
+    white-space: nowrap;
 }
 
 .contact-title p {
@@ -1194,7 +1190,9 @@ footer {
     color: rgb(149 127 114);
 }
 
-.service-flex {
+.service-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr .5fr 1fr;
     align-items: center;
     margin: 7rem 0;
 } 
@@ -1209,9 +1207,9 @@ footer {
 
 .custom-furniture-rotate {
     width: 14%;
-    margin-top: 12rem;
+    padding-left: 5rem;
+    writing-mode: vertical-lr;
     white-space: nowrap;
-    transform: rotate(-90deg);
 }
 
 .custom-furniture-rotate h2 {
@@ -1426,8 +1424,7 @@ footer {
 }
 
 .latest-post-sticky {
-    position: sticky;
-    top: 2rem;
+    
 }
 
 .latest-post-sticky h2 {
@@ -1767,7 +1764,7 @@ footer {
 
 .product-flex {
     align-items: center;
-    gap: 6rem;
+    gap: 3rem;
 }
 
 .product-img-div {
