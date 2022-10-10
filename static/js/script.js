@@ -41,3 +41,4 @@ faqs.forEach(faq => {
         // faqIcon.classList.toggle('clicked');
     })
 });
+
