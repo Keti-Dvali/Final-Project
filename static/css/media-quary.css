@@ -7,7 +7,7 @@
     }
     .home-section1-flex {
         flex-direction: column;
-
+        gap: 3rem;
     }
     .title {
         max-width: 98rem;
@@ -106,6 +106,7 @@
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 4rem;
+        gap: 2rem;
     }
     .blog-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -256,6 +257,9 @@
     .nav-links-grid a li span {
         display: none;
     }
+    .btn {
+        width: 12rem;
+    }
     .service-grid {
         grid-template-columns: 1fr;
         grid-gap: 1rem;
@@ -270,7 +274,7 @@
         margin: 0 0 6.5rem;
     }
     .blog-text {
-        margin-top: 0;
+        margin: 1rem 0;
     }
     .footer-grid {
         display: grid;
@@ -391,6 +395,10 @@
     .next-project-name h2 {
         font-size: 3rem;
     }
+    .project-bottom-img img {
+        margin: 3rem 0 5rem;
+        width: 41%;
+    }
 }
 
 
@@ -407,14 +415,40 @@
     p {
         font-size: 1.4rem;
     }
+    .title h1 {
+        font-size: 3rem;
+    }
+    .title h1:last-child {
+        padding-bottom: 1.5rem;
+    }
     .grid-text {
         grid-template-columns: 1fr;
         grid-gap: 1rem;
     }
     .blog-grid {
         grid-template-columns: 1fr;
+        padding-bottom: 0;
+    }
+    .home-section2 div {
+        align-items: baseline;
+        flex-direction: column;
+    }
+    .home-section4-grid {
+        padding: 0;
+    }
+    .home-section5 {
+        padding: 4rem 0;
+    }
+    .home-section8 {
+        padding: 5rem 0;
     }
     /* blog */
+    .title-resources {
+        font-size: 3rem;
+    }
+    .post-flex {
+        flex-direction: column;
+    }
     .right-side-content {
         flex-direction: column;
         margin-top: 3rem;
@@ -507,6 +541,23 @@
         max-width: 46rem;
         width: 100%;
         padding: 3px 4px;
+    }
+    .project-bottom-img img {
+        width: 67%;
+    }
+    .bottom-text p {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+    .faq-bottom-text {
+        font-size: 1.1rem;
+    }
+    .follow-grid {
+        grid-column-gap: 3rem;
+    }
+    .footer-grid {
+        padding: 2rem 0;
+        grid-template-columns: 1fr;
     }
 }
 

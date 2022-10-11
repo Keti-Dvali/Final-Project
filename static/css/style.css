@@ -927,13 +927,13 @@ footer {
     cursor: pointer;
 }
 
-.faq-icon img {
-    height: 1.6rem;
-    transition-duration: .8s;
+#plus-icon {
+    height: 1.6rem!important;
+    transition-duration: .8s!important;
 }
 
-.faq.clicked .faq-icon img {
-    transform: rotateZ(135deg);
+.faq.clicked #plus-icon {
+    transform: rotateZ(135deg)!important;
 }
 
 .faq-bottom-text {
@@ -1874,6 +1874,7 @@ img {
         transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     }
 }
+
 
 
 

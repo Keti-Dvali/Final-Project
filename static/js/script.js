@@ -38,7 +38,16 @@ const faqIcon = document.querySelectorAll('.faq-icon');
 faqs.forEach(faq => {
     faq.addEventListener('click', ()=> {
         faq.classList.toggle('clicked');
-        // faqIcon.classList.toggle('clicked');
     })
 });
 
+
+// animation
+
+// const images = document.querySelectorAll('img');
+
+// images.forEach(img => {
+//     window.addEventListener('scroll', ()=> {
+//         img.classList.add('animation');
+//     })
+// })
