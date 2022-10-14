@@ -13,6 +13,31 @@ body, button {
     line-height: 1.6;
 }
 
+.loader {
+    position: fixed;
+    inset: 0;
+    background-color: rgb(229 217 207);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.loader img {
+    width: 10%;
+}
+
+.disappear {
+    animation: vanish 2.8s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 h3 {
     font-size: 1.5rem;
 }
@@ -757,6 +782,11 @@ footer {
 
 .footer-list a li {
     margin-top: 2rem;
+    transition-duration: .5s;
+}
+
+.footer-list a li:hover {
+    opacity: .5;
 }
 
 .follow-grid {
@@ -1862,7 +1892,7 @@ footer {
 
 /* img animation */
 
-img {
+/* img {
     animation: img-Animation .9s linear .1s forwards;
 }
 
@@ -1873,7 +1903,7 @@ img {
     100% {
         transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     }
-}
+} */
 
 
 

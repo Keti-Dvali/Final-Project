@@ -19,10 +19,14 @@
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/media-quary.css">
     <link href="https://uploads-ssl.webflow.com/62da9129694c950b9ffca6a0/62f284636cb9eb24ff04c5bd_favicon-inner-template.svg" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Pyramid Vase - Inner - E-commerce Website</title>
 </head>
 <body>
     <header class="header">
+        <div class="loader">
+            <img src="static/img/logo-inner.svg" alt="logo">
+        </div>
         <nav class="navbar container flex">
             <div class="logo-div">
                 <a class="logo" href="index.html"><img class="logo" src="static/img/logo.svg" alt="logo"></a>
@@ -160,5 +164,9 @@
         </div>
     </footer>
     <script src="static/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
