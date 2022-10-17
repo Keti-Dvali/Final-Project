@@ -16,10 +16,10 @@ numProducts.addEventListener('click', ()=> {
     modalOverlay.classList.add('active');
 });
 
-
 closeBtn.addEventListener('click', ()=> {
     modalOverlay.classList.remove('active');
 })
+
 
 // burger-menu
 
@@ -63,14 +63,5 @@ images.forEach(img => {
 })
 
 
-// const fonts = document.querySelectorAll('h2');
 
-
-// fonts.forEach(h2  => {
-//     h2.setAttribute('data-aos', 'flip-up');
-//     h2.setAttribute('data-aos-delay', '100');
-//     h2.setAttribute('data-aos-duration', '900');
-//     h2.setAttribute('data-aos-once', 'true');
-//     h2.setAttribute('data-aos-easing', 'ease-in-out');
-// })
 
